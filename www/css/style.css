@@ -1,0 +1,46 @@
+.body{
+    background: linear-gradient(132deg, cadetblue,aqua );
+    background-size: 400% 400%;
+    animation: BackgroundGradient 10s ease infinite;
+
+}
+@keyframes BackgroundGradient{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+.current{
+    background-color: cadetblue;
+}
+
+.body1{
+    background-color: cadetblue;
+}
+
+  
+.slide-left{
+    width:100%;
+  overflow:hidden;
+  animation: slide-left 15s ease infinite;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+   

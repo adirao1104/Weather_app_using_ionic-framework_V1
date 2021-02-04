@@ -1,0 +1,76 @@
+
+<ion-view  view-title="CURRENT STATUS" >
+        <ion-content class="current">
+                <ion-refresher
+                pulling-text="Pull to refresh..."
+                on-refresh="viewdata()"
+               
+                >
+              </ion-refresher>
+              <ion-list>
+                <ion-item ng-repeat="item in items"></ion-item>
+              </ion-list> 
+                <!-- <center>
+                        <marquee><h3 style="color:rgb(255, 123, 0)">GOPALAPURAM,CHENNAI</h3></marquee>
+            </center> -->
+            <marquee> <h3 style="color:rgb(255, 123, 0)">GOPALAPURAM,CHENNAI</h3></marquee>
+            <hr>
+            
+            <center>
+            <div class="row">
+                    <div class="col"><p style="color:white;font-size: 25px">HUMIDUTY  : </p></div>            
+                  </div>
+                </center>
+                <center>
+                <div class="row">
+                <div class="col"><p style="color:white;font-size: 25px">  {{viewdata4[0].hum_val}}%</p></div>
+            </div>
+        </center>
+                  
+            <hr>
+            
+            
+            <a  class="button button-icon ion-{{icon}}" style="color:{{color}};left:290px;font-size:50px;"></a>
+
+            <br><br>
+            <center>
+            <div class="col"><p style="color:white;font-size: 25px">TEMPERATURE:  {{viewdata4[0].tem_val}}°C</p></div>
+            <br><br>
+            <div class="col col-offset-33"><b style="color:{{color}};font-size: 15px">{{text}}</b></div>
+            <hr>
+            
+        </center>
+            <center>
+            <div class="row">
+                    <div class="col"><p style="color:white;font-size: 25px">AIR PRESSURE  : </p></div>
+                    
+                  </div>
+                </center>
+                <center>
+                        <div class="row">
+                                <div class="col"><p style="color:white;font-size: 25px"> {{viewdata4[0].pres_val}}hpa</p></div>
+                                
+                              </div>
+                            </center>
+                  
+            <hr>
+            
+            <div class="row">
+                    <div class="col-33"  style="color:black;"><b>Date:</b>
+                    <div class="col col-offset-0"  style="color:black;"><b>{{viewdata4[0].curdate}}</b></div>
+                    
+                   </div>
+                  
+                  
+                   <div class="col col-offset-33"  style="color:black;"><b>Time:  {{viewdata4[0].curtime}}</b></div>
+                 
+                   
+                        
+        </ion-content>
+        </ion-view>
+
+
+
+
+
+        

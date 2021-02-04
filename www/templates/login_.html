@@ -1,0 +1,28 @@
+<ion-view view-title= "weather" hide-nav-bar="true">
+    <ion-content class="body">
+      
+            <p style="color:white; font-size: 17px;">WELCOME TO WEATHER MONITORING SYSTEM</p>
+          
+        <br><br><br><br><br>
+        <center>
+      <h1 style="color:white">Login</h1>
+    </center>
+    <div class="list">
+            <label class="item item-input">
+              <span class="input-label">Username</span>
+              <input type="text" ng-model="add.name">
+            </label>
+            
+            <label class="item item-input">
+              <span class="input-label">Password</span>
+              <input type="password" ng-model="add.pasw">
+            </label>
+          
+          <button class="button button-block button-energized" ng-click="sign()">
+             Sign Inn
+              </button>
+              </div>
+             <p>{{myUrl}}</p>
+    </ion-content>
+  </ion-view>
+  
